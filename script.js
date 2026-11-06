@@ -33,7 +33,7 @@ const translations = {
 const projectTranslations = [
   ['01 / GROUP PROJECT · IMPORT MODULE', 'A document import system that validates PDF and DOCX files, extracts text and tables, and stores data for further use.', 'Responsible for the Import module and Preview interface for reviewing and editing data before confirmation, as well as text chunking and storing vector embeddings.'],
   ['02 / IN DEVELOPMENT', 'A flexible workflow and document status tracking system.', 'Create workflows and manage tasks, update statuses, record timelines, and generate reference numbers, with REST API, Swagger, and automated testing.'],
-  ['03 / INDIVIDUAL MINI PROJECT', 'An order management system supporting multiple items and total calculations.', 'Manage orders using CRUD, validate input, and organize the application into Controller, Service, Repository, and Model layers.'],
+  ['03 / INDIVIDUAL MINI PROJECT', 'An order management system supporting multiple items and total calculations.', 'Developed a CRUD order management system supporting multiple items, automatic total calculation, and H2 data storage. The backend follows Controller, Service, Repository, and Model layers and can be run with Docker Compose.'],
   ['04 / INDIVIDUAL WORK · SOFTWARE TESTING', 'Software testing case studies to practise checking system correctness.', 'Created unit and system tests and documented expected versus actual results.']
 ];
 
