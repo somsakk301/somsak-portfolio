@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Somsak Fongphitak | IT Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md container py-3" aria-label="เมนูหลัก">
+      <a class="navbar-brand fw-bold" href="#home">Somsak<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="เปิดเมนู">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <div class="navbar-nav ms-auto gap-md-3">
+          <a class="nav-link" href="#home">หน้าแรก</a>
+          <a class="nav-link" href="#about">เกี่ยวกับฉัน</a>
+          <a class="nav-link" href="#skills">ทักษะ</a>
+          <a class="nav-link" href="#projects">ผลงาน</a>
+          <a class="nav-link" href="#contact">ติดต่อ</a>
+        </div>
+        <div class="language-switch ms-md-4 mt-3 mt-md-0" role="group" aria-label="เลือกภาษา / Choose language">
+          <button type="button" data-language="th" aria-pressed="true">ไทย</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="eyebrow">IT INTERNSHIP PORTFOLIO</p>
+          <h1><span>สมศักดิ์ ฟองพิทักษ์</span></h1>
+          <p class="hero-description">นักศึกษาเทคโนโลยีสารสนเทศอัจฉริยะ ที่สนใจ Backend, การทดสอบ API และระบบสารสนเทศ พร้อมเรียนรู้จากการทำงานจริง</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#projects" class="btn btn-primary-custom">ดูผลงาน</a>
+            <a href="#contact" class="btn btn-outline-custom">ติดต่อฉัน</a>
+          </div>
+        </div>
+        <div class="col-lg-5"><aside class="profile-card" aria-label="ข้อมูลผู้สมัคร"><div class="profile-top"><div class="portrait-frame"><img src="portrait.png" alt="ภาพถ่ายของสมศักดิ์ ฟองพิทักษ์" class="portrait" width="159" height="178"></div><div><span class="profile-status">กำลังมองหาโอกาสฝึกสหกิจ</span><h2>สมศักดิ์ ฟองพิทักษ์</h2><p class="profile-role">IT Internship Candidate</p></div></div><div class="profile-divider"></div><div class="profile-info"><span>การศึกษา</span><p>มหาวิทยาลัยวลัยลักษณ์<br>เทคโนโลยีสารสนเทศอัจฉริยะ</p></div><div class="profile-info"><span>ความสนใจ</span><p>Backend · Database · Testing</p></div></aside></div>
+      </div>
+    </section>
+    <section id="about" class="section-muted"><div class="container section-space"><p class="eyebrow">ABOUT ME</p><h2>เกี่ยวกับฉัน</h2><p>ผมเป็นนักศึกษาชั้นปีที่ 3 สาขาเทคโนโลยีสารสนเทศอัจฉริยะ มหาวิทยาลัยวลัยลักษณ์ สนใจการพัฒนาระบบหลังบ้าน การจัดการฐานข้อมูล และการทดสอบซอฟต์แวร์</p><p>จากการเรียนและทำโครงการ ผมได้ฝึกพัฒนา API จัดการข้อมูลจากเอกสาร และทดสอบการทำงานของระบบ ปัจจุบันกำลังมองหาโอกาสฝึกสหกิจเพื่อเรียนรู้จากการทำงานจริง พัฒนาทักษะ และนำความรู้ไปช่วยสนับสนุนงานของทีม</p><div class="education-highlights" aria-label="ข้อมูลการศึกษา"><div class="education-highlight"><span>เกรดเฉลี่ยสะสม · GPA</span><strong>3.84 <small>/ 4.00</small></strong></div><div class="education-highlight"><span>สาขาวิชา</span><strong class="education-detail">เทคโนโลยีสารสนเทศอัจฉริยะ</strong></div><div class="education-highlight"><span>คาดว่าจะสำเร็จการศึกษา</span><strong class="education-detail">ตุลาคม 2027</strong></div></div></div></section>
+    <section id="skills" class="container section-space"><p class="eyebrow">SKILLS &amp; TOOLS</p><h2>ทักษะและเครื่องมือ</h2><p class="section-intro">เทคโนโลยีที่เคยใช้ในการเรียนและพัฒนาโครงการ</p><div class="row g-4 mt-2">
+      <div class="col-md-4"><article class="skill-card"><h3>Backend &amp; Web</h3><p>Python, Java, FastAPI, Spring Boot, REST API, HTML, CSS และ JavaScript</p></article></div>
+      <div class="col-md-4"><article class="skill-card"><h3>Database &amp; Data</h3><p>MongoDB, SQLite, PostgreSQL, SQLAlchemy และ ChromaDB</p></article></div>
+      <div class="col-md-4"><article class="skill-card"><h3>Testing &amp; Tools</h3><p>pytest, unittest, Swagger, Git, Docker และ Docker Compose</p></article></div>
+    </div></section>
+    <section id="projects" class="container section-space"><p class="eyebrow">SELECTED PROJECTS</p><h2>ผลงานที่คัดเลือก</h2><div class="row g-4 mt-2">
+      <div class="col-md-6"><article class="project-card"><small>01 / งานกลุ่ม · รับผิดชอบส่วน IMPORT</small><h3>Import Service</h3><p>ระบบนำเข้าเอกสาร PDF และ DOCX ตรวจสอบไฟล์ สกัดข้อความและตาราง รวมถึงจัดเก็บข้อมูลเพื่อใช้งานต่อ</p><details><summary>ดูรายละเอียด</summary><p>รับผิดชอบส่วน Import และหน้า Preview สำหรับตรวจสอบและแก้ไขข้อมูลก่อนยืนยัน รวมถึงการแบ่งข้อความและจัดเก็บ vector embeddings</p></details><span>Python · FastAPI · MongoDB · ChromaDB</span></article></div>
+      <div class="col-md-6"><article class="project-card"><small>02 / กำลังพัฒนา</small><h3>FlowTrack</h3><p>ระบบจัดการขั้นตอนงานและติดตามสถานะเอกสารอย่างยืดหยุ่น</p><details><summary>ดูรายละเอียด</summary><p>สร้าง workflow และจัดการรายการงาน เปลี่ยนสถานะ บันทึก timeline สร้างหมายเลขอ้างอิง พร้อม REST API, Swagger และ automated testing</p></details><span>FastAPI · SQLAlchemy · SQLite · PostgreSQL · pytest</span></article></div>
+      <div class="col-md-6"><article class="project-card"><small>03 / มินิโปรเจกต์เดี่ยว</small><h3>Order Management System</h3><p>ระบบจัดการคำสั่งซื้อที่รองรับสินค้าหลายรายการและคำนวณยอดรวม</p><img class="project-preview" src="order-management-preview.png" alt="หน้าจอระบบจัดการคำสั่งซื้อ แสดงแบบฟอร์มข้อมูลลูกค้าและรายการสินค้า" loading="lazy" width="1828" height="871"><div class="project-links"><a class="project-demo-link" href="https://somsakk301.github.io/order-management-system/" target="_blank" rel="noopener noreferrer">ทดลองระบบ</a><a class="project-code-link" href="https://github.com/somsakk301/order-management-system" target="_blank" rel="noopener noreferrer">ดูโค้ด</a></div><details><summary>ดูรายละเอียด</summary><p>จัดการคำสั่งซื้อแบบ CRUD ตรวจสอบข้อมูล และแบ่งโครงสร้างเป็น Controller, Service, Repository และ Model</p></details><span>Java · Spring Boot · Spring Data JPA · H2</span></article></div>
+      <div class="col-md-6"><article class="project-card"><small>04 / งานเดี่ยว · SOFTWARE TESTING</small><h3>Software Testing Case Studies</h3><p>กรณีศึกษาการทดสอบซอฟต์แวร์เพื่อฝึกตรวจสอบความถูกต้องของระบบ</p><details><summary>ดูรายละเอียด</summary><p>สร้างการทดสอบระดับหน่วยและระดับระบบ พร้อมบันทึกผลที่คาดหวังเทียบกับผลจริง</p></details><span>Python · unittest</span></article></div>
+    </div></section>
+    <section id="contact" class="section-muted"><div class="container section-space"><p class="eyebrow">GET IN TOUCH</p><h2>ติดต่อฉัน</h2><p>ยินดีพูดคุยเกี่ยวกับโอกาสฝึกสหกิจและการเรียนรู้ด้านเทคโนโลยี</p><div class="contact-details"><a class="contact-link" href="mailto:somsakkee0941@gmail.com">somsakkee0941@gmail.com</a><a class="phone-link" href="tel:+66853720941">085-372-0941</a><p class="contact-location">นครศรีธรรมราช</p></div></div></section>
+  </main>
+  <footer class="container py-4 text-secondary small">© Somsak Fongphitak</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
