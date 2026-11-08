@@ -34,7 +34,7 @@ const projectTranslations = [
   ['01 / GROUP PROJECT · IMPORT MODULE', 'A document import system that validates PDF and DOCX files, extracts text and tables, and stores data for further use.', 'Responsible for the Import module and Preview interface for reviewing and editing data before confirmation, as well as text chunking and storing vector embeddings.'],
   ['02 / IN DEVELOPMENT', 'A flexible workflow and document status tracking system.', 'Create workflows and manage tasks, update statuses, record timelines, and generate reference numbers, with REST API, Swagger, and automated testing.'],
   ['03 / INDIVIDUAL MINI PROJECT', 'An order management system supporting multiple items and total calculations.', 'Developed a CRUD order management system supporting multiple items, automatic total calculation, and H2 data storage. The backend follows Controller, Service, Repository, and Model layers and can be run with Docker Compose.'],
-  ['04 / INDIVIDUAL WORK · SOFTWARE TESTING', 'Software testing case studies to practise checking system correctness.', 'Created unit and system tests and documented expected versus actual results.']
+  ['04 / COURSEWORK · SOFTWARE TESTING', 'Test case design studies for verifying the correctness of functions and system workflows.', 'Developed 30 test cases with Python unittest, covering normal behaviour, boundary values, invalid input, and system state changes, with automated testing through GitHub Actions.']
 ];
 
 const translatedElements = [];
@@ -56,7 +56,7 @@ document.querySelectorAll('.project-card').forEach((card, index) => {
   addTranslation(card.querySelector('details p'), words[2]);
 });
 addTranslation(document.querySelector('.project-demo-link'), 'Try demo');
-addTranslation(document.querySelector('.project-code-link'), 'View code');
+document.querySelectorAll('.project-code-link').forEach(element => addTranslation(element, 'View code'));
 
 function setLanguage(language) {
   document.documentElement.lang = language;
