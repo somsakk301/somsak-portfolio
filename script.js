@@ -57,6 +57,8 @@ document.querySelectorAll('.project-card').forEach((card, index) => {
 });
 addTranslation(document.querySelector('.project-demo-link'), 'Try demo');
 document.querySelectorAll('.project-code-link').forEach(element => addTranslation(element, 'View code'));
+addTranslation(document.querySelector('.project-result-link'), 'View test results');
+addTranslation(document.querySelector('.test-status-copy small'), 'Verified by GitHub Actions');
 
 function setLanguage(language) {
   document.documentElement.lang = language;
@@ -71,6 +73,7 @@ function setLanguage(language) {
   document.querySelector('.navbar-toggler').setAttribute('aria-label', language === 'th' ? 'เปิดเมนู' : 'Toggle menu');
   document.querySelector('.profile-card').setAttribute('aria-label', language === 'th' ? 'ข้อมูลผู้สมัคร' : 'Applicant information');
   document.querySelector('.education-highlights').setAttribute('aria-label', language === 'th' ? 'ข้อมูลการศึกษา' : 'Education information');
+  document.querySelector('.test-summary').setAttribute('aria-label', language === 'th' ? 'สรุปผลการทดสอบ' : 'Test results summary');
   document.querySelector('.portrait').alt = language === 'th' ? 'ภาพถ่ายของสมศักดิ์ ฟองพิทักษ์' : 'Portrait of Somsak Fongphitak';
   updateDetailsLabels();
   try { localStorage.setItem('portfolio-language', language); } catch (error) { /* ใช้ภาษาได้แม้เบราว์เซอร์ไม่เก็บค่า */ }

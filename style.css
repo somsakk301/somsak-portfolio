@@ -68,7 +68,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .project-card { display: flex; flex-direction: column; }
 .project-card small { color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .05em; }
 .project-card h3 { font-size: 1.3rem; font-weight: 700; margin: .8rem 0; overflow-wrap: anywhere; }
-.project-card span { color: var(--accent); font-size: .86rem; font-weight: 600; margin-top: auto; overflow-wrap: anywhere; }
+.project-card > span { color: var(--accent); font-size: .86rem; font-weight: 600; margin-top: auto; overflow-wrap: anywhere; }
 .project-card details { margin: 0 0 1.2rem; }
 .project-card summary { display: inline-flex; align-items: center; gap: .65rem; min-height: 44px; padding: .55rem .9rem; border: 1px solid #bd7c5a; border-radius: 8px; background: #fff8f3; color: #813714; cursor: pointer; font-weight: 600; list-style: none; }
 .project-card summary::-webkit-details-marker { display: none; }
@@ -124,3 +124,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .project-demo-link:hover { color: #fff; background: #762c11; }
 .project-code-link { border: 1px solid #d5b6a4; color: #813714; background: #fff8f3; }
 .project-code-link:hover { color: #6d2c10; background: #f9e9dc; }
+.project-result-link { border: 1px solid #28704a; color: #fff; background: #28704a; }
+.project-result-link:hover { border-color: #1e5b3b; color: #fff; background: #1e5b3b; }
+
+/* สรุปผลทดสอบ: แสดงหลักฐานที่ตรวจสอบได้โดยไม่ใช้ภาพ Terminal */
+.test-summary { margin: .35rem 0 1.25rem; padding: 1.25rem; border: 1px solid #b8d8c3; border-radius: 12px; background: linear-gradient(145deg, #f7fcf9, #edf7f1); box-shadow: inset 0 1px 0 rgba(255,255,255,.85); }
+.test-summary-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #cee3d5; }
+.test-status { display: flex; align-items: center; gap: .7rem; min-width: 0; }
+.test-status-icon { display: inline-grid; flex: 0 0 34px; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: #28704a; color: #fff; font-size: 1.05rem; font-weight: 800; }
+.test-status-copy { min-width: 0; }
+.test-status-copy strong, .test-status-copy small, .test-total strong, .test-total small { display: block; }
+.test-status-copy strong { color: #205f40; font-size: .78rem; letter-spacing: .07em; }
+.test-summary .test-status-copy small { margin-top: .18rem; color: #547064; font-size: .74rem; font-weight: 500; letter-spacing: 0; }
+.test-total { flex: 0 0 auto; text-align: right; }
+.test-total strong { color: #173d2b; font-size: 1.55rem; line-height: 1.05; }
+.test-summary .test-total small { margin-top: .25rem; color: #547064; font-size: .7rem; font-weight: 500; letter-spacing: 0; }
+.test-breakdown { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; padding-top: 1rem; }
+.test-breakdown > div { padding: .75rem .85rem; border: 1px solid #d6e8dc; border-radius: 9px; background: rgba(255,255,255,.72); }
+.test-breakdown span, .test-breakdown strong { display: block; margin: 0; overflow-wrap: anywhere; }
+.test-breakdown span { color: #587165; font-size: .73rem; font-weight: 600; }
+.test-breakdown strong { margin-top: .2rem; color: #205f40; font-size: 1rem; }
+@media (max-width: 400px) { .test-summary-head { align-items: flex-start; flex-direction: column; } .test-total { text-align: left; } .test-breakdown { grid-template-columns: 1fr; } }
