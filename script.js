@@ -34,7 +34,7 @@ const projectTranslations = [
   ['01 / GROUP PROJECT · IMPORT MODULE', 'A document import system that validates PDF and DOCX files, extracts text and tables, and stores data for further use.', 'Responsible for the Import module and Preview interface for reviewing and editing data before confirmation, as well as text chunking and storing vector embeddings.'],
   ['02 / IN DEVELOPMENT', 'A flexible workflow and document status tracking system.', 'Create workflows and manage tasks, update statuses, record timelines, and generate reference numbers, with REST API, Swagger, and automated testing.'],
   ['03 / INDIVIDUAL MINI PROJECT', 'An order management system supporting multiple items and total calculations.', 'Developed a CRUD order management system supporting multiple items, automatic total calculation, and H2 data storage. The backend follows Controller, Service, Repository, and Model layers and can be run with Docker Compose.'],
-  ['04 / COURSEWORK · SOFTWARE TESTING', 'Test case design studies for verifying the correctness of functions and system workflows.', 'Developed 30 test cases with Python unittest, covering normal behaviour, boundary values, invalid input, and system state changes, with automated testing through GitHub Actions.']
+  ['04 / COURSEWORK · SOFTWARE TESTING', 'Test case design studies for verifying the correctness of functions and system workflows.', 'Designed and developed 30 automated tests with Python unittest for a water-bill calculator and a library borrowing system, covering normal behaviour, boundary values, invalid input, and system state changes. GitHub Actions runs the test suite automatically on every code update.']
 ];
 
 const translatedElements = [];
